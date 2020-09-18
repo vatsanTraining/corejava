@@ -16,7 +16,7 @@ public class RentalValue {
 		case 3:rent=new AirConditioner().getRentalValue(quantity);
 				break;
 		}
-		scan.close();
+		
 		return rent;
 	}
 }
