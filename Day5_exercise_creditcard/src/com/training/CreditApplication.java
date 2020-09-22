@@ -33,7 +33,9 @@ public class CreditApplication {
 		
 		do {
 			System.out.println("1.store 2.retrieve 3.delete  4.exit");
+			scan.nextLine();
 			choice=scan.nextInt();
+			scan.nextLine();
 			//System.out.println("hi error");
 			switch (choice) {
 			case 1:card=createRecord();
