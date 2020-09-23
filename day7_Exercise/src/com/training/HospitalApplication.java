@@ -13,9 +13,9 @@ public class HospitalApplication {
 		
 		public static void main(String args[])
 		{
-			Set<Doctor> doctorList=new HashSet<Doctor>();
-			Set<Patient> patientList=new HashSet<Patient>();
-			Map<Doctor, HashSet<Patient>> mapObject=new HashMap<Doctor, HashSet<Patient>>() ;
+//			Set<Doctor> doctorList=new HashSet<Doctor>();
+//			Set<Patient> patientList=new HashSet<Patient>();
+//			Map<Doctor, HashSet<Patient>> mapObject=new HashMap<Doctor, HashSet<Patient>>() ;
 			Doctor doc1 =new Doctor(101, "Mr.Raj", "eye");
 			Doctor doc2=new Doctor(102, "Mr.Ramesh", "jointPain");
 			Patient pat1=new Patient(102, "nehal", 21, "Female", "eye");
@@ -29,17 +29,17 @@ public class HospitalApplication {
 			System.out.println("Set appointment");
 			hs.setAppointment(doc1, pat1);
 			
+			System.out.println("All doctors");
+			hs.printList("doctor");
 			
-			
-		}
-		public static void printList(Collection<?> list,String type) {
-			//Collections.sort(list,getComparator(type));
-			Iterator<?> iterator=list.iterator();
-			while(iterator.hasNext()) {
-				System.out.println(iterator.next());
-			}
 
+			System.out.println("All Patient");
+			hs.printList( "Patient");
+			
+			
+			
 		}
+		
 		
 		public Comparator<?> getComparator(String type)
 		{

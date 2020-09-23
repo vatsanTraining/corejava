@@ -13,5 +13,6 @@ public interface HospitalServiceDAO {
 	boolean addDoctor(Doctor doctor);
 	Collection<Patient> returnPatientList(Doctor doctor);
 	boolean setAppointment(Doctor doc,Patient patient);
+	public void printList(String type);
 	
 }
